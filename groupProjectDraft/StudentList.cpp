@@ -1,4 +1,4 @@
-#include "StudentList.h"
+#include <string>
 
 //creating the a struct to hold basic information about the student with respective typenames
 struct student
@@ -14,16 +14,18 @@ struct student
 **Middle bit holding in specified data taken from the student struct.
 **We will refer to pieces of the students struct through multiple pointers
 */
-struct Node
-{
-	Node *prev;
-	student data;
-	Node *next;
-};
+
 //Creating a class for our linklist, with functions within that will make our data easier to manipulate in the long run
-class linklist
+template<class T>
+class linklist 
 {
 private:
+	struct Node
+	{
+		Node *prev;
+		student data;
+		Node *next;
+	};
 	Node * head, *tail; //declaring the first node in the linked list and making it private
 public:
 	template<typename T> //typename declared as T for ease, basically representing any type that is interpreted

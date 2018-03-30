@@ -6,6 +6,7 @@
 #define STUDENTLIST_H
 struct student{};
 struct Node{};
+template<class T>
 class linklist 
 {
 	void add_node(student dat);

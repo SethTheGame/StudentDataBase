@@ -1,0 +1,5 @@
+﻿  Main.cpp
+  StudentList.cpp
+c:\users\amear\documents\github\studentdatabase\groupprojectdraft\studentlist.cpp(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  c:\users\amear\documents\github\studentdatabase\groupprojectdraft\studentlist.cpp(79): note: see reference to class template instantiation 'linklist<T>' being compiled
+  Generating Code...
