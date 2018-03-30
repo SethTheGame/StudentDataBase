@@ -4,9 +4,11 @@
 
 #ifndef STUDENTLIST_H
 #define STUDENTLIST_H
-void add_node(int n);
-void delete_node(int n);
-void go_back();
-
+class linklist 
+{
+	void add_node(int n);
+	void delete_node(int n);
+	void go_back();
+};
 
 #endif
