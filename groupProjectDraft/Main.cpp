@@ -10,7 +10,6 @@ int main()
 	student stud3;
 	student stud4;
 
-
 	ll.add_node(stud1);
 	
 	stud1->data->name = "Amear";
