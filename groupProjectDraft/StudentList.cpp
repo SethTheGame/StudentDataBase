@@ -1,10 +1,11 @@
 #include <string>
-
+#include "StudentList.h"
+using namespace std;
 //creating the a struct to hold basic information about the student with respective typenames
 struct student
 {
-	std::string name;
-	std::string major;
+	string name;
+	string major;
 	float grades;
 	int id;
 	int gradYear;
@@ -16,26 +17,8 @@ struct student
 */
 
 //Creating a class for our linklist, with functions within that will make our data easier to manipulate in the long run
-template<class T>
-class linklist 
-{
-private:
-	struct Node
-	{
-		Node *prev;
-		student data;
-		Node *next;
-	};
-	Node * head, *tail; //declaring the first node in the linked list and making it private
-public:
-	template<typename T> //typename declared as T for ease, basically representing any type that is interpreted
-	linked_list(T)
-	{
-		head = NULL;
-		tail = NULL; //setting both the head and tail of the linked list to null
-	}
 
-	void add_node(student dat)
+	void linklist::add_node(int student)
 	{
 		Node *temp = new Node; //create temporary node
 		temp->next = NULL; //set it to null
@@ -52,7 +35,7 @@ public:
 		}
 		
 	}
-	void delete_node(student dat)
+	void linklist::delete_node(int student)
 	{
 		tail->prev;
 		tail->next = NULL;//hoping this sets ptr to prev then sets next value to null
